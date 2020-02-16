@@ -3,12 +3,12 @@
   "networkMode": "awsvpc",
   "containerDefinitions": [
     {
-      "name": "nginx",
-      "image": "nginx",
+      "name": "todo-app",
+      "image": "todo-app",
       "portMappings": [
         {
-          "containerPort": 80,
-          "hostPort": 80,
+          "containerPort": 8000,
+          "hostPort": 8000,
           "protocol": "tcp"
         }
       ],
