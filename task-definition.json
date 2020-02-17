@@ -4,7 +4,7 @@
   "containerDefinitions": [
     {
       "name": "todo-app",
-      "image": "todo-app",
+      "image": "487179832901.dkr.ecr.ap-northeast-1.amazonaws.com/todo-app",
       "portMappings": [
         {
           "containerPort": 8000,
@@ -13,6 +13,7 @@
         }
       ],
       "essential": true
+      "command": ["python","manage.py","runserver","0.0.0.0:8000"]
     }
   ],
   "requiresCompatibilities": [
@@ -21,5 +22,4 @@
   "executionRoleArn": "ecsTaskExecutionRole",
   "cpu": "256",
   "memory": "512"
-  "command": ["python","manage.py","runserver","0.0.0.0:8000"]
 }
