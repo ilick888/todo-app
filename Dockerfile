@@ -9,4 +9,4 @@ COPY . /code
 RUN python manage.py makemigrations
 RUN python manage.py migrate
 
-EXPOSE 8000
+EXPOSE 80
